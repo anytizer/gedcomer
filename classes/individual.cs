@@ -122,12 +122,14 @@ namespace classes
         public void marry(individual opposite)
         {
             // @todo Recursion prevention: Cannot marry oneself.
-            // if(this != opposite)
             if (opposite != null)
             {
                 if (this.id != opposite.id)
                 {
-                    this.relate(kinship.SPOUSE, opposite);
+                    if (this.id != opposite.id)
+                    {
+                        this.relate(kinship.SPOUSE, opposite);
+                    }
                 }
             }
         }

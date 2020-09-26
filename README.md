@@ -3,8 +3,10 @@ To write simple GEDCOM format files in C#.NET.
 
 * Programatically create individuals.
 * Apply personal details, dates and events.
+* Attach media and notes.
 
-The purpose is to create a .ged file format that a gedcom software understands. Instead of opening a new gedcom project and entering the data in the software, you can programatically create the details.
+The purpose is to create a .ged file format that a gedcom software understands.
+Instead of opening a new gedcom project and entering the data in the software, you can programatically create the details.
 
 ## Examples
 
@@ -54,5 +56,5 @@ The purpose is to create a .ged file format that a gedcom software understands. 
 	string gedcom = gc.ToString();
 
 # Inspirations
-* Simple Family Tree 1.32 at [jdmcox](http://www.jdmcox.com) website.
-* GEDCOM.org [specfications](https://www.gedcom.org/gedcom.html).
+* Simple Family Tree 1.32 at [jdmcox.com](http://www.jdmcox.com).
+* [GEDCOM.org specifications](https://www.gedcom.org/gedcom.html).
