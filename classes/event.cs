@@ -18,7 +18,8 @@ namespace classes
 1 EVEN
 2 TYPE {0}
 2 DATE {1}
-2 PLAC {2}",
+2 PLAC {2}
+",
     this.name,
     this.date,
     this.place

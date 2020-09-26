@@ -278,8 +278,7 @@ namespace classes
             string gedcom = "";
             foreach (photo photo in this.photos)
             {
-                // @todo Return photos
-                gedcom += "";
+                gedcom += photo.ToString();
             }
 
             return gedcom;

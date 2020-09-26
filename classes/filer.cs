@@ -14,21 +14,25 @@ namespace classes
         public filer(string filename = "")
         {
             this.filename = filename;
+        }
 
+        public string read()
+        {
+            this.contents = ""; 
             if (System.IO.File.Exists(this.filename))
             {
-                this.read();
+                this.contents = System.IO.File.ReadAllText(this.filename);
             }
+
+            return this.contents;
         }
 
-        public void read()
+        public bool write(string contents = "")
         {
-            this.contents = System.IO.File.ReadAllText(this.filename);
-        }
-
-        public void write(string contents = "")
-        {
+            bool success = false;
             System.IO.File.WriteAllText(this.filename, contents);
+            
+            return success;
         }
     }
 }

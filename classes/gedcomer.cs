@@ -35,6 +35,8 @@ namespace classes
             // relationships
             // footer
             // f.contents;
+            // notes
+            // media
             return gc;
         }
 
