@@ -51,8 +51,8 @@ The purpose is to create a .ged file format that a gedcom software understands. 
 	gedcomer gc = new gedcomer();
 	gc.root(self);
 
-  string gedcom = gc.ToString();
+	string gedcom = gc.ToString();
 
 # Inspirations
 * Simple Family Tree 1.32 at [jdmcox](http://www.jdmcox.com) website.
-* GEDCOM specofications - https://www.gedcom.org/gedcom.html
+* GEDCOM.org [specfications](https://www.gedcom.org/gedcom.html).
