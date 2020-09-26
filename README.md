@@ -62,5 +62,8 @@ The output string needs to be GEDCOM complaint.
 * Simple Family Tree 1.32 at [jdmcox.com](http://www.jdmcox.com).
 * [GEDCOM.org specifications](https://www.gedcom.org/gedcom.html).
 
+See implementations in [tester.cs](/exe/tester.cs) - complete example.
+
 ## But,,,
-I ended up with unusual relationships in the output due to a programming flaw. Can you help me please? See [images](/unusual) pictures that need fixing.
+I ended up with some unusual relationships in the output due to a programming flaw.
+Can you help me please? See [images](/unusual) of relationships that need fixing.
