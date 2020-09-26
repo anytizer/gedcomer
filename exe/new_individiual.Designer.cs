@@ -1,6 +1,6 @@
 ﻿namespace exe
 {
-    partial class new_ndividiual
+    partial class new_individiual
     {
         /// <summary>
         /// Required designer variable.

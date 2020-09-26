@@ -67,11 +67,11 @@
     <Compile Include="new_info.Designer.cs">
       <DependentUpon>new_info.cs</DependentUpon>
     </Compile>
-    <Compile Include="new_ndividiual.cs">
+    <Compile Include="new_individiual.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="new_ndividiual.Designer.cs">
-      <DependentUpon>new_ndividiual.cs</DependentUpon>
+    <Compile Include="new_individiual.Designer.cs">
+      <DependentUpon>new_individiual.cs</DependentUpon>
     </Compile>
     <Compile Include="parser.cs" />
     <Compile Include="Program.cs" />
@@ -86,8 +86,8 @@
     <EmbeddedResource Include="new_info.resx">
       <DependentUpon>new_info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="new_ndividiual.resx">
-      <DependentUpon>new_ndividiual.cs</DependentUpon>
+    <EmbeddedResource Include="new_individiual.resx">
+      <DependentUpon>new_individiual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

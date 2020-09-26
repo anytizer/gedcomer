@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace exe
 {
-    public partial class new_ndividiual : Form
+    public partial class new_individiual : Form
     {
-        public new_ndividiual()
+        public new_individiual()
         {
             InitializeComponent();
         }

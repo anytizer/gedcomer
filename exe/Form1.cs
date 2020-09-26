@@ -26,13 +26,13 @@ namespace exe
             textBox1.Text = gedcom;
 
             //filer f = new filer("output.ged");
-            filer f = new filer(@"D:\Desktop\projects\ramakanta.ged\_output.ged");
+            filer f = new filer(@"gedcom.ged");
             f.write(gedcom);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new_ndividiual ni = new new_ndividiual();
+            new_individiual ni = new new_individiual();
             ni.ShowDialog();
         }
 
