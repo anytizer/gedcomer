@@ -13,7 +13,7 @@ namespace classes
     {
         private string lines = @"
 0 HEAD
-1 SOUR GEDCOMer by Bimal Poudel
+1 SOUR GEDCOMER
 2 VERS 0.0.1
 1 GEDC
 2 VERS 5.5.5
