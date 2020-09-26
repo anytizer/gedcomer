@@ -107,11 +107,13 @@ namespace classes
         public void male()
         {
             this.sex = sex.MALE;
+            this.role = role.HUSB;
         }
 
         public void female()
         {
             this.sex = sex.FEMALE;
+            this.role = role.WIFE;
         }
 
         /**
@@ -155,7 +157,7 @@ namespace classes
                         this.id = person._id();
                         this.name = person._name();
                         this.sex = person._sex();
-                        this.role = role.SELF;
+                        // this.role = role.SELF;
 
                         // @todo Copy these records too
                         // @todo Multiple calls should not be available

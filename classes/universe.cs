@@ -8,6 +8,9 @@ namespace classes
 {
     static class universe
     {
+        /**
+         * To provide a general purpose identifier
+         */
         public static string id()
         {
             string guid = Guid.NewGuid().ToString().Replace("-", "").ToUpper();

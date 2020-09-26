@@ -20,9 +20,9 @@ namespace classes
                 case classes.role.HUSB:
                     role = "HUSB";
                     break;
-                case classes.role.SELF:
-                    role = "SELF";
-                    break;
+                //case classes.role.SELF:
+                //    role = "SELF";
+                //    break;
                 case classes.role.WIFE:
                     role = "WIFE";
                     break;
@@ -41,13 +41,13 @@ namespace classes
             string type = "";
             switch (datetype)
             {
-                case datetype.BIRT:
+                case classes.datetype.BIRT:
                     type = "BIRT";
                     break;
-                case datetype.DEAT:
+                case classes.datetype.DEAT:
                     type = "DEAT";
                     break;
-                case datetype.MARR:
+                case classes.datetype.MARR:
                     // apply only to family creation
                     type = "MARR";
                     break;

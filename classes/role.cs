@@ -9,7 +9,7 @@ namespace classes
     // gedcom family roles
     public enum role
     {
-        SELF,
+        //SELF,
         HUSB,
         WIFE,
         CHIL,
