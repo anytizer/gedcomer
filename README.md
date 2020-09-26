@@ -8,6 +8,9 @@ To write simple GEDCOM format files in C#.NET.
 The purpose is to create a .ged file format that a gedcom software understands.
 Instead of opening a new gedcom project and entering the data in the software, you can programatically create the details.
 
+## @todo
+The output string needs to be GEDCOM complaint.
+
 ## Examples
 
 ### How to create individuals

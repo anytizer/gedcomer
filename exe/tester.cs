@@ -13,6 +13,7 @@ namespace exe
         {
             individual self = new individual("Self You");
             individual grandfather = new individual("Grand Father");
+            individual grandmother = new individual("Grand Mother");
             individual gotra = new individual("Gotra");
             individual father = new individual("Father");
             individual mother = new individual("Mother");
@@ -30,7 +31,9 @@ namespace exe
             child1.birth("1987", "", "");
             child2.birth("1990", "", "");
 
+            grandfather.marry(grandmother);
             grandfather.death("2004", "", "");
+            grandmother.death("2006", "", "");
 
             // generation #2
             daughterinlaw.birth("1995", "", "");
