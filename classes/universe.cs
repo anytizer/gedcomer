@@ -10,7 +10,7 @@ namespace classes
     {
         public static string id()
         {
-            string guid = Guid.NewGuid().ToString().ToUpper();
+            string guid = Guid.NewGuid().ToString().Replace("-", "").ToUpper();
             return guid;
         }
     }
