@@ -13,5 +13,5 @@ namespace classes
         HUSB,
         WIFE,
         CHIL,
-    }    
+    }
 }

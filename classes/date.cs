@@ -15,13 +15,13 @@ namespace classes
         string data = "";
         string text = "";
 
-        public date(datetype type, string date_value = "", string place="", string text="")
+        public date(datetype type, string date_value = "", string place = "", string text = "")
         {
             // @todo Manage source and text data
             this.type = type;
             this.date_value = date_value;
             this.place = "";
-            this.source = "";            
+            this.source = "";
         }
 
         public override string ToString()

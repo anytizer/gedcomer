@@ -10,7 +10,7 @@ namespace classes
     {
         public List<string> lines = new List<string>();
 
-        public note(string line="")
+        public note(string line = "")
         {
             this.lines.Add(line);
         }
@@ -23,13 +23,13 @@ namespace classes
             string gedcom = @"
 0 NOTE
 ";
-            foreach(string line in this.lines)
+            foreach (string line in this.lines)
             {
                 gedcom += string.Format(@"
 1 CONT {0}
 ", line.ToString());
             }
-            
+
             return gedcom;
         }
     }

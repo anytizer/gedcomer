@@ -29,9 +29,9 @@ namespace classes
             gedcomer gc = new gedcomer();
             // header
             // people
-                // names
-                // events
-                // photos
+            // names
+            // events
+            // photos
             // relationships
             // footer
             // f.contents;
@@ -58,7 +58,7 @@ namespace classes
         private string _people()
         {
             string gedcom = "";
-            foreach(family f in this.clans)
+            foreach (family f in this.clans)
             {
                 foreach (individual member in f.members)
                 {

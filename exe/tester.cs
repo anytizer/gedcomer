@@ -71,12 +71,10 @@ namespace exe
 
             gedcomer gc = new gedcomer();
             gc.root(self);
-            // gc.root(self); // case 1
-            // gc.root(grandfather); // case 2
-            // gc.root(grandson); // case 3
-            // gc.root(mother); // case 4
-
-            // gc.show(self);
+            // self // case 1
+            // grandfather // case 2
+            // grandson // case 3
+            // mother // case 4
 
             string gedcom = gc.ToString();
             return gedcom;

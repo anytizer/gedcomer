@@ -15,7 +15,7 @@ namespace classes
         {
             this.filename = filename;
 
-            if(System.IO.File.Exists(this.filename))
+            if (System.IO.File.Exists(this.filename))
             {
                 this.read();
             }
@@ -26,7 +26,7 @@ namespace classes
             this.contents = System.IO.File.ReadAllText(this.filename);
         }
 
-        public  void write(string contents="")
+        public void write(string contents = "")
         {
             System.IO.File.WriteAllText(this.filename, contents);
         }

@@ -171,7 +171,7 @@ namespace classes
                         this.father.marry(this.mother);
                         break;
                     case kinship.MOTHER:
-                        person.role = role.WIFE; 
+                        person.role = role.WIFE;
                         person.female();
                         // @todo add spouse
                         this.mother = person;
@@ -217,7 +217,7 @@ namespace classes
         {
             return this.name;
         }
-        
+
         private sex _sex()
         {
             return this.sex;
