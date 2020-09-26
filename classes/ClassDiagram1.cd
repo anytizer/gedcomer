@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="classes.filer">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAAAAAAAACAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>filer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.date">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIEAAAAAAAgAAABQAAIAAAQAAAAAAA=</HashCode>
+      <FileName>date.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.@event">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEQAAAAAAAAQAAAAA=</HashCode>
+      <FileName>event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.family">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgA=</HashCode>
+      <FileName>family.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.gedcomer">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAEAEAAAgAAACAAAAAAAAAQAAAAAAIAQ=</HashCode>
+      <FileName>gedcomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.header">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>header.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.individual">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>A0AwIlAAIAAAAAUGCAxAAJBQAAAEAgMAgAAAoAQAIiI=</HashCode>
+      <FileName>individual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.note">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.photo">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>photo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="classes.universe">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>universe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="classes.datetype">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>datetype.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="classes.kinship">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAIAAAAAAAAAIAAAAAAYA=</HashCode>
+      <FileName>kinship.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="classes.role">
+    <Position X="1.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAACgAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>role.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="classes.sex">
+    <Position X="3.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAACAAAAAAAAgAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>sex.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
