@@ -11,10 +11,11 @@ namespace exe
     {
         public string test()
         {
-            return this.test_family();
+            return this.test_family(); // Test everything
+            //return this.test_father();
         }
 
-        public string test_family()
+        private string test_family()
         {
             individual self = new individual("Self You");
             individual grandfather = new individual("Grand Father");
@@ -36,7 +37,7 @@ namespace exe
             child1.birth("1987");
             child2.birth("1990");
 
-            grandfather.marry(grandmother);
+            grandfather.marry(grandmother); // or the revese way should be too possible.
             grandfather.death("2004");
             grandmother.death("2006");
 
@@ -73,7 +74,8 @@ namespace exe
             // assignment of a new individual defined separately
             //self.relate(kinship.FATHER, father);
             self.relate(kinship.MOTHER, mother);
-            self.relate(kinship.SPOUSE, spouse);
+            //self.relate(kinship.SPOUSE, spouse);
+            self.marry(spouse);
             self.relate(kinship.CHILD, child1);
             self.relate(kinship.CHILD, child2);
             self.relate(kinship.CHILD, child3);
@@ -89,7 +91,7 @@ namespace exe
             return gedcom;
         }
 
-        public string test_self()
+        private string test_self()
         {
             individual self = new individual("Self");
            
@@ -102,7 +104,7 @@ namespace exe
 
         // @todo Spousal relationship should be drawn
         // Create FAM record
-        public string test_spouse()
+        private string test_spouse()
         {
             individual self = new individual("Self");
             individual spouse = new individual("Spouse");
@@ -116,7 +118,7 @@ namespace exe
         }
 
         // Test spouse and child
-        public string test_child()
+        private string test_child()
         {
             individual self = new individual("Self");
             individual spouse = new individual("Spouse");
@@ -132,7 +134,7 @@ namespace exe
         }
 
         // Test father
-        public string test_father()
+        private string test_father()
         {
             individual self = new individual("Self");
             individual father = new individual("Father");
