@@ -1,5 +1,5 @@
 # gedcomer
-To write simple GEDCOM format files in C#.NET.
+Aim: To write simple GEDCOM format files in C#.NET.
 
 * Programatically create individuals.
 * Apply personal details, dates and events.
@@ -29,7 +29,7 @@ The output string needs to be GEDCOM complaint.
 
 ### How to edit the details
 
-	self.birth("1980", "", "");
+	self.birth("1980");
 	father.birth("1955", "", "");
 	mother.birth("1960", "", "");
   
@@ -59,10 +59,14 @@ The output string needs to be GEDCOM complaint.
 	string gedcom = gc.ToString();
 
 # Inspirations
-* Simple Family Tree 1.32 at [jdmcox.com](http://www.jdmcox.com).
+* Simple Family Tree 1.32 at [jdmcox.com](http://www.jdmcox.com), C++ Source code available.
 * [GEDCOM.org specifications](https://www.gedcom.org/gedcom.html).
 
 See implementations in [tester.cs](/exe/tester.cs) - complete example.
+
+## Disclaimer
+This work is NOT to port Simple Family Tree into C#.NET.
+
 
 ## But,,,
 I ended up with some unusual relationships in the output due to a programming flaw.
