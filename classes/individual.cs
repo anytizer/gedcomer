@@ -31,7 +31,7 @@ namespace classes
         // recursively access the parent family details
         // @todo implement/know the family id only
         private family belongsToFamily;
-        private role role;
+        //private role role;
 
         public individual(string name = "")
         {
@@ -57,9 +57,19 @@ namespace classes
             this.children = new List<individual>();
         }
 
+        public void birth(string _date = "")
+        {
+            this.birth(_date, "", "");
+        }
+
         public void birth(string _date = "", string place = "", string text = "")
         {
             this.BIRTH = new date(datetype.BIRT, _date, place, text);
+        }
+
+        public void death(string _date = "")
+        {
+            this.death(_date, "", "");
         }
 
         public void death(string _date = "", string place = "", string text = "")
@@ -101,19 +111,30 @@ namespace classes
 
         internal void belongsto(family family)
         {
+            role r;
+            if(this.sex == sex.MALE)
+            {
+                r = role.HUSB;
+            }
+            else
+            {
+                r = role.WIFE;
+            }
+
             this.belongsToFamily = family;
+            //this.role = r;
         }
 
         public void male()
         {
             this.sex = sex.MALE;
-            this.role = role.HUSB;
+            //this.role = role.HUSB;
         }
 
         public void female()
         {
             this.sex = sex.FEMALE;
-            this.role = role.WIFE;
+            //this.role = role.WIFE;
         }
 
         /**
@@ -143,14 +164,14 @@ namespace classes
 
             if (person != null)
             {
-                if (person.sex == sex.MALE)
-                {
-                    person.role = role.HUSB;
-                }
-                else
-                {
-                    person.role = role.WIFE;
-                }
+                // if (person.sex == sex.MALE)
+                // {
+                //     person.role = role.HUSB;
+                // }
+                // else
+                // {
+                //     person.role = role.WIFE;
+                // }
 
                 // sex correction by known relationships
                 switch (relationship)
@@ -168,14 +189,14 @@ namespace classes
                     case kinship.FATHER:
                         person.male();
                         // @todo add spouse
-                        person.role = role.HUSB;
+                        //person.role = role.HUSB;
                         this.father = person;
 
                         // @if mother available, marry
                         this.father.marry(this.mother);
                         break;
                     case kinship.MOTHER:
-                        person.role = role.WIFE;
+                        //person.role = role.WIFE;
                         person.female();
                         // @todo add spouse
                         this.mother = person;
@@ -195,17 +216,17 @@ namespace classes
                         if (person.sex == sex.FEMALE)
                         {
                             person.sex = sex.MALE;
-                            person.role = role.HUSB;
+                            //person.role = role.HUSB;
                         }
                         else
                         {
                             person.sex = sex.FEMALE;
-                            person.role = role.WIFE;
+                            //person.role = role.WIFE;
                         }
                         this.spouses.Add(person);
                         break;
                     case kinship.CHILD:
-                        person.role = role.CHIL;
+                        //person.role = role.CHIL;
                         this.children.Add(person);
                         break;
                 }
@@ -350,7 +371,7 @@ namespace classes
             {
                 foreach (individual spouse in this.spouses)
                 {
-                    string role = symbols.role(spouse.role);
+                    string role = symbols.role(spouse._sex());
                     gedcom += string.Format(@"
 1 {0} @{1}@
 ", role, spouse.id);

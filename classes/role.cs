@@ -12,6 +12,6 @@ namespace classes
         //SELF,
         HUSB,
         WIFE,
-        CHIL,
+        //CHIL,
     }
 }

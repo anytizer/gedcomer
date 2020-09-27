@@ -11,6 +11,11 @@ namespace exe
     {
         public string test()
         {
+            return this.test_family();
+        }
+
+        public string test_family()
+        {
             individual self = new individual("Self You");
             individual grandfather = new individual("Grand Father");
             individual grandmother = new individual("Grand Mother");
@@ -24,23 +29,23 @@ namespace exe
             individual daughterinlaw = new individual("Daugher In-Law");
             individual grandson = new individual("Grand Son");
 
-            self.birth("1980", "", "");
-            father.birth("1955", "", "");
-            mother.birth("1960", "", "");
-            spouse.birth("1984", "", "");
-            child1.birth("1987", "", "");
-            child2.birth("1990", "", "");
+            self.birth("1980");
+            father.birth("1955");
+            mother.birth("1960");
+            spouse.birth("1984");
+            child1.birth("1987");
+            child2.birth("1990");
 
             grandfather.marry(grandmother);
-            grandfather.death("2004", "", "");
-            grandmother.death("2006", "", "");
+            grandfather.death("2004");
+            grandmother.death("2006");
 
             // generation #2
-            daughterinlaw.birth("1995", "", "");
+            daughterinlaw.birth("1995");
             child1.marry(daughterinlaw);
             
             // generation #3
-            grandson.birth("1999", "", "");
+            grandson.birth("1999");
 
             self.male();
             child1.male();
@@ -54,23 +59,24 @@ namespace exe
             father.register_event("2010", "Migrate", "City 1");
             father.register_event("2011", "Teaching", "City 2");
 
-            mother.birth("1960", "Place", "");
-            mother.death("2001", "Home", "");
+            mother.birth("1960");
+            mother.death("2001");
+
+            father.relate(kinship.FATHER, grandfather);
+            father.relate(kinship.CHILD, self);
+            grandfather.relate(kinship.FATHER, gotra);
+            child1.relate(kinship.CHILD, grandson);
 
             // just: values change
             self.relate(kinship.SELF, self);
             
             // assignment of a new individual defined separately
-            self.relate(kinship.FATHER, father);
+            //self.relate(kinship.FATHER, father);
             self.relate(kinship.MOTHER, mother);
             self.relate(kinship.SPOUSE, spouse);
             self.relate(kinship.CHILD, child1);
             self.relate(kinship.CHILD, child2);
             self.relate(kinship.CHILD, child3);
-
-            father.relate(kinship.FATHER, grandfather);
-            grandfather.relate(kinship.FATHER, gotra);            
-            grandson.relate(kinship.CHILD, child1);
 
             gedcomer gc = new gedcomer();
             gc.root(self);
@@ -78,6 +84,62 @@ namespace exe
             // grandfather // case 2
             // grandson // case 3
             // mother // case 4
+
+            string gedcom = gc.ToString();
+            return gedcom;
+        }
+
+        public string test_self()
+        {
+            individual self = new individual("Self");
+           
+            gedcomer gc = new gedcomer();
+            gc.root(self);
+
+            string gedcom = gc.ToString();
+            return gedcom;
+        }
+
+        // @todo Spousal relationship should be drawn
+        // Create FAM record
+        public string test_spouse()
+        {
+            individual self = new individual("Self");
+            individual spouse = new individual("Spouse");
+            self.relate(kinship.SPOUSE, spouse);
+
+            gedcomer gc = new gedcomer();
+            gc.root(self);
+
+            string gedcom = gc.ToString();
+            return gedcom;
+        }
+
+        // Test spouse and child
+        public string test_child()
+        {
+            individual self = new individual("Self");
+            individual spouse = new individual("Spouse");
+            individual child = new individual("Spouse");
+            self.relate(kinship.SPOUSE, spouse);
+            self.relate(kinship.CHILD, child);
+
+            gedcomer gc = new gedcomer();
+            gc.root(self);
+
+            string gedcom = gc.ToString();
+            return gedcom;
+        }
+
+        // Test father
+        public string test_father()
+        {
+            individual self = new individual("Self");
+            individual father = new individual("Father");
+            self.relate(kinship.FATHER, father);
+
+            gedcomer gc = new gedcomer();
+            gc.root(self);
 
             string gedcom = gc.ToString();
             return gedcom;

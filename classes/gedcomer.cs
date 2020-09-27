@@ -96,6 +96,7 @@ namespace classes
         public void root(individual whoever)
         {
             family clan = new family();
+            
             whoever.belongsto(clan);
             clan.members.Add(whoever);
 

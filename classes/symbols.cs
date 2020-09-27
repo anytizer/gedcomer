@@ -8,26 +8,23 @@ namespace classes
 {
     class symbols
     {
-        internal static string role(role r)
+        internal static string role(sex sex)
         {
             string role = "";
 
-            switch (r)
+            switch (sex)
             {
-                case classes.role.CHIL:
-                    role = "CHIL";
-                    break;
-                case classes.role.HUSB:
+                //case classes.role.CHIL:
+                //    role = "CHIL";
+                //    break;
+                case classes.sex.MALE:
                     role = "HUSB";
                     break;
-                //case classes.role.SELF:
-                //    role = "SELF";
-                //    break;
-                case classes.role.WIFE:
+                case sex.FEMALE:
                     role = "WIFE";
                     break;
                 default:
-                    // should NOT come here
+                    // should NOT arrive here
                     role = "UNKN";
                     break;
             }

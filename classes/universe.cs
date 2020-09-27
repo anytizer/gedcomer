@@ -10,6 +10,8 @@ namespace classes
     {
         /**
          * To provide a general purpose identifier
+         * eg. Invidividual ID
+         * eg. Family ID
          */
         public static string id()
         {
